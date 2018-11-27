@@ -1,0 +1,21 @@
+<view class = 'Classification-list'>
+  <view class = 'Classification-item' wx:for="{{Classification}}" bindtap='ChangeClassification' data-classification = '{{item.classification}}'>{{item.classification}}</view>
+</view>
+
+<view class = 'HotNews'>
+
+</view>
+
+<scroll-view scroll-y style='height: 740rpx'>
+  <view class = 'NewsList'>
+    <view class = 'News-item' wx:for = "{{TodayNews}}">
+      <view class = 'text'>
+        <view class = 'News-title'>{{item.title}}</view>
+        <view class = 'News-time'>{{item.time}}</view>
+        <view class = 'News-source'>{{item.source}}</view>
+      </view>
+      
+      <image class = 'News-pic' src = '{{item.firstImage}}' ></image>
+    </view>
+  </view>
+</scroll-view>
