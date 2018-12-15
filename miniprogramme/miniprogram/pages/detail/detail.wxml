@@ -1,6 +1,7 @@
 <view class = 'detail-title'>
   <view class = 'title'>{{Detail_title}}</view>
-  <view class = 'source'>{{Detail_source}}</view>
+  <view class = 'source' wx:if = '{{Detail_source == ""}}'>网络数据</view>
+  <view class = 'source' wx:else>{{Detail_source}}</view>
   <view class = 'time'>{{Detail_time}}</view>
   <view class = 'read'>阅读{{Detail_read}}</view>
 </view>

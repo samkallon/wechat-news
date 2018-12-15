@@ -68,6 +68,12 @@ Page({
       },
       complete: ()=>{
         callback && callback()
+      },
+      fail: err => {
+        wx.showToast({
+          title: '网络连接失败',
+          icon: 'loading'
+        })
       }
     })
   },

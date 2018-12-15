@@ -3,9 +3,11 @@
 </view>
 
 <view class = 'HotNews' bindtap='GetHotDetail'>
-  <image class = 'HotImage' src = '{{HotNews.firstImage}}'></image>
+  <image class = 'HotImage'  wx:if = '{{HotNews.firstImage == ""}}'src = '/images/no-pic.png'></image>
+  <image class = 'HotImage' wx:else src = '{{HotNews.firstImage}}'></image>
   <view class=  'HotTitle' >{{HotNews.title}}</view>
-  <view class = 'HotSource'>{{HotNews.source}}</view>
+  <view class = 'HotSource' wx:if = '{{HotNews.source == ""}}'>网络数据</view>
+  <view class = 'HotSource' wx:else>{{HotNews.source}}</view>
   <view class=  'HotTime'>{{HotNews.date}}</view>
 </view>
 
@@ -15,9 +17,11 @@
       <view class = 'text'> 
         <view class = 'News-title'>{{item.title}}</view>
         <view class = 'News-time'>{{item.time}}</view>
-        <view class = 'News-source'>{{item.source}}</view>
+        <view class = 'News-source' wx:if = '{{item.source == ""}}'>网络数据</view>
+        <view class = 'News-source' wx:else >{{item.source}}</view>
       </view>
-      <image class = 'News-pic' src = '{{item.firstImage}}' ></image>
+      <image class = 'News-pic' wx:if = '{{item.firstImage == ""}}'src = '/images/no-pic.png' ></image>
+      <image class = 'News-pic' wx:else src='{{item.firstImage}}'> </image>
     </view>
   </view>
 </scroll-view>
