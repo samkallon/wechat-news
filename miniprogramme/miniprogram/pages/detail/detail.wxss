@@ -1,0 +1,32 @@
+.detail-title{ 
+  height: 250rpx;
+}
+.time{
+  opacity: 0.5;
+  font-size: 25rpx;
+}
+.source{
+  opacity: 0.5;
+  font-size: 25rpx;
+}
+.read{
+  opacity: 0.5;
+  font-size: 25rpx;
+}
+.title{
+  font-size: 50rpx;
+  font-weight: 700;
+}
+.strong{
+  font-family: "黑体";
+  font-size: 45rpx;
+  font-weight: 450rpx;
+  color: rebeccapurple;
+}
+.image{ 
+  width: 750rpx;
+}
+.text{
+  font-size: 35rpx;
+  line-height: 49rpx;
+}

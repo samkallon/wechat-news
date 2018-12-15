@@ -1,25 +1,54 @@
 .Classification-list{
   display: flex;
-  background-color: rgb(41, 142, 182);
+  background-color:burlywood;
 }
 
 .Classification-item{
   display: flex;
   font-size: 30rpx;
-  
   font-weight: bold; 
   line-height: 42rpx;
   align-items: center;
   width: 100rpx;
   margin-left: 20rpx;
+  color: white;
 }
 
 .HotNews{
   height: 400rpx;
   width: 750rpx;
-  background-color: rgb(165, 165, 165);
 }
-
+.HotImage{
+  height: 400rpx;
+  width: 750rpx;
+  z-index: -1;
+}
+.HotTitle {
+  color:rgb(255, 255, 255);
+  position:relative;
+  left: 20rpx;
+  bottom: 200rpx;
+  font-weight: bold;
+  height: 100rpx;
+}
+.HotSource{ 
+  position:relative;
+  color:rgb(252, 252, 252);
+  left: 20rpx;
+  bottom: 180rpx;
+  height: 50rpx;
+  font-size: 30rpx;
+  opacity: 0.7;
+}
+.HotTime{ 
+  position:absolute;
+  color:rgb(255, 255, 255);
+  height: 50rpx;
+  bottom: 765rpx;
+  opacity:0.7;
+  left: 20rpx;
+  font-size: 30rpx;
+}
 .NewsList{
   flex-direction: column;
 }
@@ -28,10 +57,11 @@
   flex-direction: row;
 }
 .News-title{
-  margin-right: 260rpx;
+  /*margin-right: 260rpx;*/
+  margin-left: 10rpx;
   width: 470rpx;
-  font-size: 40rpx;
-  line-height: 56rpx;
+  font-size: 35rpx;
+  line-height: 49rpx;
 }
 .text{
   margin-right: 260rpx;
@@ -41,21 +71,21 @@
 .News-time{
   bottom: 10rpx;
   left: 10rpx;
-  font-size: 30rpx;
-  line-height: 42rpx;
+  font-size: 25rpx;
+  line-height: 35rpx;
   opacity: 0.5
 }
 
 .News-source{
   opacity: 0.5;
-  font-size: 30rpx;
-  line-height: 42rpx;
+  font-size: 25rpx;
+  line-height: 35rpx;
   bottom: 10rpx;
   right: 10rpx;
 }
 
 .News-pic{
-  height: 200rpx;
+  height: 180rpx;
   width: 260rpx;
   margin-left: -250rpx;
 }

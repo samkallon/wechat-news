@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#deb887",
+    "navigationBarTitleText": "新闻小程序",
+    "navigationBarTextStyle": "withe",
+    "enablePullDownRefresh": true
+   
+  }
+}

@@ -1,0 +1,16 @@
+<view class = 'detail-title'>
+  <view class = 'title'>{{Detail_title}}</view>
+  <view class = 'source'>{{Detail_source}}</view>
+  <view class = 'time'>{{Detail_time}}</view>
+  <view class = 'read'>阅读{{Detail_read}}</view>
+</view>
+
+<view class = 'content' wx:for="{{Detail_content}}">
+  
+  <view class = 'strong' wx:if='{{item.type === "strong"}}'>{{item.text}}</view>
+  <image class = 'image' wx:elif='{{item.type === "image"}}' src = '{{item.src}}'></image>
+  <view class = 'text' wx:elif = '{{item.type === "p"}}'><text decode="{{true}}">&emsp;&emsp;</text>{{item.text}}</view>
+    
+</view>
+
+
